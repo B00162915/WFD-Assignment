@@ -15,9 +15,9 @@ class EmployeeTest(TestCase):
 
         employee = Employee.objects.create(
             user=user,
-            role_type='coach',
-            salary_type='hourly',
-            hourly_rate=20
+            roleType='coach',
+            salaryType='hourly',
+            hourlyRate=20
         )
 
         self.assertEqual(employee.roleType, 'coach')
