@@ -1,0 +1,13 @@
+[
+  {
+    "model": "employees.employee",
+    "fields": {
+      "user": 1,
+      "roleType": "coach",
+      "salaryType": "fixed",
+      "baseSalary": 3000.00,
+      "hourlyRate": null,
+      "isActive": true
+    }
+  }
+]

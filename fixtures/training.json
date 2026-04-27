@@ -1,0 +1,11 @@
+[
+  {
+    "model": "training.trainingsession",
+    "fields": {
+      "team": 1,
+      "coach": 1,
+      "date": "2024-01-01",
+      "duration": 2.0
+    }
+  }
+]

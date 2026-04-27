@@ -1,0 +1,9 @@
+<h2>Players</h2>
+
+<a href="{% url 'playerCreate' %}">Add Player</a>
+
+<ul>
+{% for player in players %}
+    <li>{{ player.user.username }} - {{ player.team.name }}</li>
+{% endfor %}
+</ul>

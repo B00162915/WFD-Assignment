@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Team</title>
+</head>
+<body>
+
+<h2>Create Team</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Create Team</button>
+</form>
+
+<br>
+
+<a href="/teams/">Back to Team List</a>
+
+</body>
+</html>

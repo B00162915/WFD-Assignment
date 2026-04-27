@@ -1,0 +1,9 @@
+<h2>Teams</h2>
+
+<a href="{% url 'teamCreate' %}">Create Team</a>
+
+<ul>
+{% for team in teams %}
+    <li>{{ team.name }} - Coach: {{ team.coach.user.username }}</li>
+{% endfor %}
+</ul>

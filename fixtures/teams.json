@@ -1,0 +1,9 @@
+[
+  {
+    "model": "teams.team",
+    "fields": {
+      "name": "First Team",
+      "coach": 1
+    }
+  }
+]

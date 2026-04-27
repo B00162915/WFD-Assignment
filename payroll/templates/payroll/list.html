@@ -1,0 +1,29 @@
+<h2>Payroll</h2>
+
+<a href="{% url 'payrollCreate' %}">Create Payroll</a>
+
+<table>
+<tr>
+    <th>Employee</th>
+    <th>Date</th>
+    <th>Total Pay</th>
+    <th>Status</th>
+    <th>Actions</th>
+</tr>
+
+{% for p in payrolls %}
+<tr>
+    <td>{{ p.employee.user.username }}</td>
+    <td>{{ p.date }}</td>
+    <td>{{ p.total_pay }}</td>
+    <td>{{ p.status }}</td>
+    <td>
+        {% if p.status == 'pending' %}
+            <a href="{% url 'payrollApprove' p.id %}">Approve</a>
+        {% elif p.status == 'approved' %}
+            <a href="{% url 'payrollPay' p.id %}">Mark Paid</a>
+        {% endif %}
+    </td>
+</tr>
+{% endfor %}
+</table>

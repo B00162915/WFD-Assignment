@@ -1,0 +1,22 @@
+[
+  {
+    "model": "accounts.user",
+    "fields": {
+      "username": "admin",
+      "password": "password",
+      "role": "manager",
+      "isSuperuser": true,
+      "isStaff": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "username": "user1",
+      "password": "password",
+      "role": "player",
+      "isSuperuser": false,
+      "isStaff": false
+    }
+  }
+]
