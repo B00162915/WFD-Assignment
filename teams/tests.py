@@ -9,7 +9,7 @@ User = get_user_model()
 class TeamTest(TestCase):
 
     def testCreateTeam(self):
-        user = User.objects.createUser(username='coach1', password='password', role='coach')
+        user = User.objects.create_user(username='coach1', password='password', role='coach')
 
         employee = Employee.objects.create(
             user=user,
