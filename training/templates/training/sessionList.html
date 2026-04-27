@@ -1,0 +1,9 @@
+<h2>Training Sessions</h2>
+
+<a href="{% url 'sessionCreate' %}">Create Session</a>
+
+<ul>
+{% for s in sessions %}
+    <li>{{ s.team.name }} - {{ s.date }} - Coach: {{ s.coach.user.username }}</li>
+{% endfor %}
+</ul>
