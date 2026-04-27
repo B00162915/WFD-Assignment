@@ -14,9 +14,9 @@ class TrainingTest(TestCase):
 
         employee = Employee.objects.create(
             user=user,
-            role_type='coach',
-            salary_type='fixed',
-            base_salary=3000
+            roleType='coach',
+            salaryType='fixed',
+            baseSalary=3000
         )
 
         team = Team.objects.create(name='Team A', coach=employee)
