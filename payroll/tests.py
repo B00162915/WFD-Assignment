@@ -12,15 +12,15 @@ class PayrollTest(TestCase):
 
         employee = Employee.objects.create(
             user=user,
-            role_type='coach',
-            salary_type='hourly',
-            hourly_rate=20
+            roleType='coach',
+            salaryType='hourly',
+            hourlyRate=20
         )
 
         payroll = PayrollEntry.objects.create(
             employee=employee,
             date='2024-01-01',
-            hours_worked=10,
+            hoursWorked=10,
             bonus=50,
             deductions=20
         )
